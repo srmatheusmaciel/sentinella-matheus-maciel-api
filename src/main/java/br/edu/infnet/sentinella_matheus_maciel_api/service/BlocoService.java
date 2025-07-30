@@ -1,4 +1,4 @@
-package br.edu.infnet.sentinella_matheus_maciel_api.Service;
+package br.edu.infnet.sentinella_matheus_maciel_api.service;
 
 import br.edu.infnet.sentinella_matheus_maciel_api.dto.DadosAtualizacaoBlocoDTO;
 import br.edu.infnet.sentinella_matheus_maciel_api.dto.DadosCadastroBlocoDTO;
