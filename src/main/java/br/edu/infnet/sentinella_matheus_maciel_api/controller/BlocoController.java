@@ -1,8 +1,8 @@
 package br.edu.infnet.sentinella_matheus_maciel_api.controller;
 
-import br.edu.infnet.sentinella_matheus_maciel_api.dto.DadosAtualizacaoBlocoDTO;
-import br.edu.infnet.sentinella_matheus_maciel_api.dto.DadosCadastroBlocoDTO;
-import br.edu.infnet.sentinella_matheus_maciel_api.dto.DadosListagemBlocoDTO;
+import br.edu.infnet.sentinella_matheus_maciel_api.dto.bloco.DadosAtualizacaoBlocoDTO;
+import br.edu.infnet.sentinella_matheus_maciel_api.dto.bloco.DadosCadastroBlocoDTO;
+import br.edu.infnet.sentinella_matheus_maciel_api.dto.bloco.DadosListagemBlocoDTO;
 import br.edu.infnet.sentinella_matheus_maciel_api.service.BlocoService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;

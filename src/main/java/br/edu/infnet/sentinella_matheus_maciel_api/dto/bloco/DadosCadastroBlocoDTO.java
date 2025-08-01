@@ -1,4 +1,4 @@
-package br.edu.infnet.sentinella_matheus_maciel_api.dto;
+package br.edu.infnet.sentinella_matheus_maciel_api.dto.bloco;
 
 import jakarta.validation.constraints.NotBlank;
 

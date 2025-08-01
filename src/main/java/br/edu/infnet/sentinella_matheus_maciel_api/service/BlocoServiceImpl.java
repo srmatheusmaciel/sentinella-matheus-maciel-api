@@ -1,8 +1,10 @@
 package br.edu.infnet.sentinella_matheus_maciel_api.service;
 
-import br.edu.infnet.sentinella_matheus_maciel_api.dto.DadosAtualizacaoBlocoDTO;
-import br.edu.infnet.sentinella_matheus_maciel_api.dto.DadosCadastroBlocoDTO;
-import br.edu.infnet.sentinella_matheus_maciel_api.dto.DadosListagemBlocoDTO;
+
+
+import br.edu.infnet.sentinella_matheus_maciel_api.dto.bloco.DadosAtualizacaoBlocoDTO;
+import br.edu.infnet.sentinella_matheus_maciel_api.dto.bloco.DadosCadastroBlocoDTO;
+import br.edu.infnet.sentinella_matheus_maciel_api.dto.bloco.DadosListagemBlocoDTO;
 import br.edu.infnet.sentinella_matheus_maciel_api.model.domain.Bloco;
 import br.edu.infnet.sentinella_matheus_maciel_api.repository.BlocoRepository;
 import jakarta.persistence.EntityNotFoundException;
@@ -58,6 +60,12 @@ public class BlocoServiceImpl implements BlocoService {
         }
 
         repository.deleteById(id);
+    }
+
+    @Override
+    public Bloco buscarPorId(Long id) {
+        return repository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Bloco não encontrado com o id: " + id));
     }
 
 
